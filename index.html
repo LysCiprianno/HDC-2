@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Eletrônico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+    <h1>Caixa Eletrônico</h1>
+    <div id="login">
+        <input type="text" id="nome" placeholder="Digite seu nome" required>
+        <button onclick="iniciar()">Iniciar</button>
+    </div>
+ 
+    <div id="menu">
+        <h2>Bem-vindo, <span id="usuarioNome"></span>!</h2>
+        <p id="mensagem"></p>
+        <button onclick="acessarSaldo()">Saldo</button>
+        <button onclick="verExtrato()">Extrato</button>
+        <button onclick="sacar()">Saque</button>
+        <button onclick="depositar()">Depósito</button>
+        <button onclick="transferir()">Transferência</button>
+        <button onclick="sair()">Sair</button>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
